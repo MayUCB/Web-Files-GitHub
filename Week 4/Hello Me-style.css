@@ -1,0 +1,34 @@
+
+  #Myname{
+    font-size: 50px;
+    background-color: #7c7c74;
+    color: #d4cccc;
+    text-align: center;
+    border-width: 5px;
+    border-style: ridge;
+    border-radius: 10px;
+  }
+  #own{
+    font-weight: bolder;
+  }
+  body{
+    background-color:#cacbd4;
+  }
+  ul{
+    font-family: Monaco;
+    font-weight: 900;
+    background-color: #d4cccc;
+  }
+  ol{
+    color: #7c7c74;
+  }
+  img{
+    width: 40vw;
+
+  }
+#p{
+  text-decoration: underline;
+}
+#myself{
+  color: #A86355
+}
