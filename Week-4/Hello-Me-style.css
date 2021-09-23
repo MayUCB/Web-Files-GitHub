@@ -22,13 +22,24 @@
   ol{
     color: #7c7c74;
   }
+  div{
+    display: flex;
+    justify-content: center;
+  }
   img{
     width: 40vw;
-
+    margin-left: auto;
+    margin-right: auto;
   }
 #p{
   text-decoration: underline;
 }
 #myself{
+  color: #A86355
+}
+#m1{
+  color: #A86355
+}
+#m2{
   color: #A86355
 }
