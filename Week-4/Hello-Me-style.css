@@ -7,9 +7,7 @@
     border-width: 5px;
     border-style: ridge;
     border-radius: 10px;
-    border-color: #f2be7e;
-    border-left-style: dotted;
-    border-right-style: dotted;
+    border: solid #f2be7e 2px;
     font-family: "Pacifico", cursive;
   }
   #own{
@@ -24,10 +22,24 @@
     padding-left: 20px;
   }
 
-  body{
+  #body{
     background-color:#f2ede4;
     font-family: 'Poppins', sans-serif;
   }
+
+  #solid1{
+    border: solid 3px;
+    color: #f2be7e;
+    margin-top: -20px;
+  }
+  #solid2{
+      border: solid 3px;
+      color: #d97e4a;
+  }
+  #solid3{
+        border: solid 3px;
+        color: #bf491f;
+}
 
   ul{
     font-weight: 500;
