@@ -32,6 +32,7 @@
     color: #f2be7e;
     margin-top: -20px;
   }
+
   #solid2{
       border: solid 3px;
       color: #d97e4a;
@@ -39,7 +40,7 @@
   #solid3{
         border: solid 3px;
         color: #bf491f;
-}
+  }
 
   ul{
     font-weight: 500;
