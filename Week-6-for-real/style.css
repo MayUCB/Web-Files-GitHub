@@ -1,0 +1,63 @@
+body{
+  position: 0px;
+  margin: 0px;
+  background-color: #fffde7
+}
+h2{
+font-family:'Anton', sans-serif;
+}
+
+h1{
+font-family:'Anton', sans-serif;
+color: white;
+}
+
+p{
+  font-family: helvetica;
+  color: #e9745a
+}
+
+#hero{
+  overflow: hidden;
+  margin: 0px;
+  padding: 0px;
+  height: 30vw;
+  width:100vw
+}
+
+#hero img{
+  width: 100vw;
+  position: relative;
+  bottom: 300px;
+}
+
+#hero h1{
+  z-index: 1;
+  position: relative;
+  font-size: 5vw;
+  top: 30vh;
+  margin: 0 0 0 7vw;
+}
+
+#one, #two, #three{
+margin-left: 7vw;
+margin-right: 3vw;
+margin-top: 7vw;
+}
+
+button{
+  background-color: #f86b1d;
+  font-family:'Anton', sans-serif;
+  font-size: 30px;
+  color: white;
+  margin: 10px;
+  padding: 7px 20px;
+}
+
+button:active{
+  background-color:#f09c5a;
+}
+
+button:hover{
+  background-color:#fb8b05;
+}

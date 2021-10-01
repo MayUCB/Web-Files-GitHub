@@ -1,0 +1,57 @@
+<!<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <title>Week 6</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&display=swap">
+</head>
+
+<body>
+    <section id="hero">
+      <h1 id="herotext">Welcome to my site.</h1>
+      <img src="https://tk.ismcdn.jp/mwimgs/b/4/1140/img_b4640e640ac9a29727bccb651bc42c91268208.jpg" alt="earth"/>
+    </section>
+
+    <section id="one">
+      <h2>This is my first Section</h2>
+      <p>orhgaoehgoang</p>
+      <p>oianegoargnog</p>
+    </section>
+
+    <section id="two">
+      <h2>This is my second Section</h2>
+      <p>orhgaoehgoang</p>
+      <p>oianegoargnog</p>
+    </section>
+
+    <section id="three">
+      <h2>This is my button</h2>
+      <button id="mybutton">Click this button</button>
+      <button id="mybutton2">Click this button</button>
+    </section>
+
+<script>
+  console.log("javascript working");
+  document.getElementById("mybutton").addEventListener("click", buttonOne);
+  document.getElementById("mybutton2").addEventListener("click", buttonClicked);
+  document.getElementById("hero").addEventListener("click", heroClicked);
+
+  function buttonOne(){
+  alert("you pushed the button!");
+  document.getElementById("one").style.color = "red";
+  document.getElementById("three").style.backgroundcolor = "skyblue";
+  }
+
+  function buttonClicked(){
+    alert("You pushed the second button!");
+  }
+  
+  function heroClicked(){
+    alert("You clicked the hero");
+    document.getElementById("herotext").innerHTML = "You are not Welcome!!!!!";
+  }
+
+</script>
+
+</body>
+</html>
