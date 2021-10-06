@@ -1,0 +1,37 @@
+#qbox{
+  background-color: #adcfa9;
+  margin: 20vw 10vw;
+  padding:10vw 10vw;
+  border-radius: 10px;
+}
+
+button{
+  border-radius: 8px;
+  padding: 1vh 3vw;
+  float:right;
+  margin-top: 1vh;
+  background-color: black;
+  color: #adcfa9;
+}
+
+button hover{
+  color: red; solid: 1px;
+}
+
+h1{
+  font-size: 40px;
+  color: white;
+  font-family: 'Explora', cursive;
+}
+
+div{
+  border: 1px solid black;
+  margin-left: 2vw;
+}
+.flexitem{
+  flex-grow: 1;
+}
+
+#flex{
+  margin: 3vw;
+}

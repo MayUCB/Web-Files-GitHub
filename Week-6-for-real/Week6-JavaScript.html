@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <title>Week6-Javascript</title>
+  <link rel="stylesheet" href="JavaScript-style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&display=swap">
+</head>
+
+<body>
+    <section id="Hearts">
+      <h1 id="Heartstext">Welcome To My Site.</h1>
+      <img src="https://cdn.wallpaperdirect.com/asset/img/product/118624/tiled/dupenny-potions-black-and-white-black-white-wallpaper-tiled-118624.jpg" alt="bottle"/>
+    </section>
+
+    <section id="B">
+      <h2 id="h2">Button for changing colors.</h2>
+      <button id="mybutton">Click this button</button>
+    </section>
+
+    <section id="one">
+      <h2 id="LD">Light Version</h2>
+      <p id="LLDD">light, light, light,light, light, light,light, light, light,light, light, light,light, light, light,light, light, light,light, light, light,light</p>
+    </section>
+
+
+<script>
+  console.log("javascript working");
+  document.getElementById("mybutton").addEventListener("click", buttonOne);
+  document.getElementById("Hearts").addEventListener("click", HeartsClicked);
+
+  function buttonOne(){
+  alert("You had changed the version of my site!");
+  document.getElementById("LLDD").style.color = "#6b5152";
+  document.getElementById("LD").style.color = "#6b5152";
+  document.getElementById("h2").style.color = "#6b5152";
+
+  document.getElementById("LD").innerHTML = "Dark Version";
+  document.getElementById("LLDD").innerHTML = "dark, dark, dark,dark, dark, dark,dark, dark, dark,dark, dark, dark,dark, dark, dark,dark, dark, dark,dark, dark, dark";
+  }
+
+
+  function HeartsClicked(){
+    alert("You clicked for Dark.");
+    document.getElementById("Heartstext").innerHTML = "Here Is My Dark Version.";
+    document.getElementById("Heartstext").style.color = "#656565";
+  }
+
+</script>
+
+</body>
+</html>
