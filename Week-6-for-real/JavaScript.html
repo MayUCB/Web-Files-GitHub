@@ -15,6 +15,7 @@
     <section id="B">
       <h2 id="h2">Button for changing colors.</h2>
       <button id="mybutton">Click this button</button>
+      <button id="mybutton2">Click this button</button>
     </section>
 
     <section id="one">
@@ -26,6 +27,7 @@
 <script>
   console.log("javascript working");
   document.getElementById("mybutton").addEventListener("click", buttonOne);
+  document.getElementById("mybutton2").addEventListener("click", buttonTwo);
   document.getElementById("Hearts").addEventListener("click", HeartsClicked);
 
   function buttonOne(){
@@ -38,6 +40,15 @@
   document.getElementById("LLDD").innerHTML = "dark, dark, dark,dark, dark, dark,dark, dark, dark,dark, dark, dark,dark, dark, dark,dark, dark, dark,dark, dark, dark";
   }
 
+  function buttonTwo(){
+  alert("You had changed the version of my site again!");
+  document.getElementById("LLDD").style.color = "#7b8b6f";
+  document.getElementById("LD").style.color = "#7b8b6f";
+  document.getElementById("h2").style.color = "#7b8b6f";
+
+  document.getElementById("LD").innerHTML = "Green Version";
+  document.getElementById("LLDD").innerHTML = "green, green, green, green, green, green, green, green, green, green, green, green, green, green, green, green, green ";
+}
 
   function HeartsClicked(){
     alert("You clicked for Dark.");

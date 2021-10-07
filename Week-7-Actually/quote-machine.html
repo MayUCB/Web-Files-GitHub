@@ -1,0 +1,36 @@
+<html lang = "en">
+<head>
+  <title>Week 7 quote machine</title>
+  <link rel="stylesheet" href="quote.css">
+  <link href="https://fonts.googleapis.com/css2?family=Explora&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<section id="qbox">
+  <h1 id="qtext">Welcome the quote machine, click the button to get a quote.</h1>
+  <button id="newquote">New Quote</button>
+</section>
+
+
+<script>
+  const quotes = ["It makes me happy just being by your side.", "All these feelings I just can't hide. You'll always be in my heart.", "Can't bear the pain when we are apart."];
+  let quotecount = 0
+
+  document.getElementById("newquote").addEventListener("click", buttonClicked);
+
+  function buttonClicked(){
+    console.log(quotes[quotecount]);
+    document.getElementById("qtext").innerHTML = quotes[quotecount];
+    if(quotecount>=2){
+      quotecount = 0;
+    }else{
+      quotecount++;
+  }
+
+  }
+</script>
+
+
+
+</body>
+</html>
