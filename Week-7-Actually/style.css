@@ -28,10 +28,13 @@ div{
   border: 1px solid black;
   margin-left: 2vw;
 }
-.flexitem{
-  flex-grow: 1;
-}
 
 #flex{
+  display: flex;
   margin: 3vw;
+}
+
+.flexitem{
+  flex-grow: 1;
+  display: inline-flex;
 }

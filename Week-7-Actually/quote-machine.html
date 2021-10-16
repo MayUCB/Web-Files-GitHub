@@ -7,13 +7,13 @@
 
 <body>
 <section id="qbox">
-  <h1 id="qtext">Welcome the quote machine, click the button to get a quote.</h1>
+  <h1 id="qtext">Welcome the quote machine, click the button to get a love quote.</h1>
   <button id="newquote">New Quote</button>
 </section>
 
 
 <script>
-  const quotes = ["It makes me happy just being by your side.", "All these feelings I just can't hide. You'll always be in my heart.", "Can't bear the pain when we are apart."];
+  const quotes = ["As he read, I fell in love the way you fall asleep, slowly, and then all at once.", "Loved you yesterday, love you still, always have, always will.", "I saw that you were perfect, and so I loved you. Then I saw that you were not perfect and I loved you even more.","Thinking of you keeps me awake. Dreaming of you keeps me asleep. Being with you keeps me alive.","If I know what love is, it is because of you.", "I swear I couldnt love you more than I do right now, and yet I know I will tomorrow.", "If you live to be a hundred, I want to live to be a hundred minus one day so I never have to live without you.", "You make me want to be a better man."];
   let quotecount = 0
 
   document.getElementById("newquote").addEventListener("click", buttonClicked);
@@ -21,7 +21,7 @@
   function buttonClicked(){
     console.log(quotes[quotecount]);
     document.getElementById("qtext").innerHTML = quotes[quotecount];
-    if(quotecount>=2){
+    if(quotecount>=7){
       quotecount = 0;
     }else{
       quotecount++;
