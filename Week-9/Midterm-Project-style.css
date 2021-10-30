@@ -1,0 +1,93 @@
+body{
+  background-color: #a1a698
+}
+
+
+
+#box{
+  background-color: white;
+  background-image: url(https://www.photos-public-domain.com/wp-content/uploads/2012/05/ivory-off-white-paper-texture.jpg);
+  margin: 5vw 10vw 5vw;
+  padding:5vw 10vw;
+  box-shadow: 5px 5px 40px grey;
+  font-family:'Roboto', sans-serif
+  }
+
+nav {
+  margin: 0px auto 0;
+
+  position: relative;
+  left: 150px;
+  top: -20px;
+  width: 370px;
+  height: 50px;
+  background-color: #f2ede7;
+  border-radius: 5px;
+  font-size: 0;
+}
+nav a {
+  line-height: 50px;
+  height: 100%;
+  font-size: 15px;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: black;
+  cursor: pointer;
+  font-weight: bold;
+}
+nav .animation {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  z-index: 0;
+  transition: all .5s ease 0s;
+  border-radius: 5px;
+}
+a:nth-child(1) {
+  width: 100px;
+}
+a:nth-child(2) {
+  width: 110px;
+}
+a:nth-child(3) {
+  width: 160px;
+}
+
+nav .start-home, a:nth-child(1):hover~.animation {
+  width: 100px;
+  left: 0;
+  background-color: #8c93a5;
+}
+nav .start-about, a:nth-child(2):hover~.animation {
+  width: 110px;
+  left: 100px;
+  background-color: #8c93a5;
+}
+nav .start-portefolio, a:nth-child(3):hover~.animation {
+  width: 160px;
+  left: 210px;
+  background-color: #8c93a5;
+}
+
+img{
+  position:relative;
+  width: 100%
+  height:auto;
+}
+
+h1{
+  font-size: 30pt;
+  color: black;
+}
+#homeone{
+  font-size: 13pt; height: 40px; width:380px;
+  position: relative;
+  top: -330px;
+  left: 330px;
+  color: #8c93a5
+
+}

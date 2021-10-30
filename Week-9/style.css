@@ -1,0 +1,58 @@
+#tabs, #items{
+  display: flex;
+  margin: 25vh 10vw 0 10vw;
+
+}
+
+#items{
+  display: flex;
+  margin: 0vh 10vw 0 10vw;
+  padding-top: 80px;
+  border: 1px solid #aaa;
+  border-top: none;
+  /* border-spacing: inherit; */
+  border-bottom: 30px;
+
+}
+
+.meal{
+  flex-grow: 1;
+  width: auto;
+  border: 1px solid #aaa;
+  background-color: #eaecef
+}
+
+#image, .menu{
+  flex-grow: 1;
+  width: auto;
+  height: 100px;
+  /* background-color: pink;
+  border: 1px solid black; */
+  max-width: 80%;
+}
+
+h2{
+  margin-top: 28px;
+  padding-bottom: 0;
+  font-size: 1.8em;
+  margin-left: 30px;
+}
+
+
+#dinnermenu, #brunchmenu{
+  display: none;
+}
+
+.active{
+  background-color: white;
+  border-bottom: none;
+}
+
+img{
+  height: 30vw;
+  max-width: 40vw;
+  object-fit: cover;
+  display: block;
+  margin: auto;
+
+}
