@@ -10,7 +10,7 @@
     border: solid #f2be7e 2px;
     font-family: "Pacifico", cursive;
   }
-  
+
   #own{
     font-weight: bolder;
     color: #bf481f;
@@ -55,14 +55,12 @@
     padding-left: 60px;
   }
 
-  div{
-    display: flex;
-    justify-content: center;
-  }
   img{
     width: 40vw;
     margin-left: auto;
     margin-right: auto;
+    justify-content: center;
+    display: flex;
   }
 
 #m1, #m2, #m3{
@@ -74,4 +72,34 @@
 #xiaozhan{
   color: #bf481f;
   padding-left: 20px;
+}
+
+@media only screen and (max-width: 700px) {
+  /* For mobile phones: */
+  img{
+    width: 100%;
+  }
+  ul{
+  font-size: 60%;
+}
+#solid1, #solid2, #solid3{
+  border: solid 2px;
+}
+#p, #own{
+  font-size: 70%;
+}
+#m1, #m2, #m3{
+  font-size: 100%;
+}
+
+ol{
+font-size: 70%;
+}
+#xiaozhan{
+  font-size: 90%
+}
+
+#pagetop,#footer{
+  font-size: 40%;
+}
 }
