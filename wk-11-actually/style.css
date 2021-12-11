@@ -1,0 +1,225 @@
+@media screen and (min-width:800px){
+  #contactimg{
+    display:block;
+  }
+
+  #hero h1{
+    font-size: 60px;
+  }
+
+  #portfolio{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "header two"
+    "header three"
+    "four four";
+  }
+}
+
+@media screen and (max-width:801px){
+  #contactimg{
+    display:none;
+  }
+
+  #hero h1{
+    font-size: 30px;
+  }
+
+  #portfolio{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "header"
+    "two"
+    "three"
+    "four";
+  }
+}
+
+
+#hero h1{
+  z-index:1;
+  color: #fff;
+  position: absolute;
+  margin-top:450px;
+  margin-left: 40px;
+  margin-right: 100px;
+  font-weight: 600;
+  /* font-size: 30px; */
+}
+
+
+body{
+  margin: auto 20vw auto 20vw;
+}
+
+/* .portfoliopic{
+  width: 100%;
+  height:100%;
+  object-fit: cover;
+} */
+
+
+#contactimg{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+#contacttext{
+  display:flex;
+  flex-direction:column;
+  text-align: center;
+  align-items: center;
+  height: calc(100%-50px);
+  margin-top: 50px;
+
+}
+
+.contactdivs{
+  height:100%;
+}
+
+#social img{
+  width:50px;
+  margin: 0px 10px 0px 10px;
+
+}
+
+#social{
+  display:flex;
+  width: 60%;
+  margin:auto;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+#hero img{
+  width: 100%;
+  height:600px;
+  object-fit: cover;
+}
+
+
+
+.tmember:nth-child(2) img{
+  object-position: 0px 0px;
+}
+
+.tmember:nth-child(3) img{
+  object-position: 0px 0px;
+}
+.tmember{
+  flex-grow:1;
+  text-align: center;
+}
+
+#team{
+  display:flex;
+  flex-wrap: wrap;
+}
+
+nav{
+  display:flex;
+  width: 50vw;
+  justify-content: right;
+  flex-wrap: wrap;
+  margin: 30px auto 30px calc(100% - 50vw);
+}
+
+nav a{
+  font-family: arial;
+  font-size: 20px;
+  font-weight: 300;
+  margin-left: 50px;
+  text-decoration: none;
+  color: #1f1b1b;
+}
+
+.active{
+  color: #e84c41;
+}
+
+h1{
+  font-family: "Merriweather";
+  font-size: 40px;
+}
+
+
+
+p{
+  font-family: arial;
+}
+
+#index h2{
+  font-size: 40px;
+}
+
+h4{
+  font-family: arial;
+}
+
+#about, #ourteam h2, #do{
+  margin-left: 50px;
+  margin-top: 100px;
+}
+
+body{
+  margin-bottom: 100px;
+}
+
+#team{
+  margin-top: 80px;
+}
+
+#contact{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+
+
+#pic5{
+  object-position: 70% 100%;
+}
+
+#pic1{
+  grid-area: header;
+  /* grid-row-start:1;
+  grid-row-end:3; */
+  /* grid-column-start:1;
+  grid-column-end:3; */
+}
+
+#pic2{
+  grid-area: two;
+}
+
+#pic3{
+  grid-area: three;
+}
+
+#pic4{
+    /* border: 4px lightgreen solid; */
+    grid-area: four;
+    /* grid-column-start: 2;
+    grid-row-start: span 2; */
+}
+
+
+
+
+
+#portfolio img{
+  object-fit:cover;
+  width:100%;
+  height:100%;
+}
+
+.tmember img{
+  width: 250px;
+  height:250px;
+  object-fit: cover;
+  border-radius: 1000px;
+}

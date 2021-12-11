@@ -1,0 +1,192 @@
+
+.about-page {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 1405px;
+  overflow: hidden;
+  padding: 23px 0;
+  width: 1280px;
+}
+
+.about-page .flex-row {
+  align-items: center;
+  display: flex;
+  margin-right: 37.5px;
+  min-width: 1130px;
+}
+
+.about-page .tlife-logo {
+  cursor: pointer;
+  height: 86px;
+  object-fit: cover;
+  width: 107px;
+}
+
+.about-page .place {
+  cursor: pointer;
+  letter-spacing: 0;
+  line-height: 12px;
+  margin-left: 733px;
+  margin-top: 28.0px;
+  min-height: 18px;
+  min-width: 34px;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.about-page .place:hover {
+  transform: translate(0, -5px);
+box-shadow: 0px 12px 5px -8px rgba(0,0,0,0.2);
+}
+
+.about-page .about {
+  cursor: pointer;
+  letter-spacing: 0;
+  line-height: 12px;
+  margin-left: 34px;
+  margin-top: 30.0px;
+  min-height: 18px;
+  min-width: 35px;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.about-page .about:hover {
+  transform: translate(0, -5px);
+box-shadow: 0px 12px 5px -8px rgba(0,0,0,0.2);
+}
+
+.about-page .try-app-button {
+  cursor: pointer;
+  display: flex;
+  height: 24px;
+  margin-left: 40px;
+  margin-top: 24.28px;
+  width: 148px;
+}
+
+.about-page .group-3 {
+  align-items: flex-end;
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  min-width: 147.76px;
+}
+
+.about-page .overlap-group {
+  align-items: flex-start;
+  background-image: url(../img/rectangle-6-1-1@1x.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  display: flex;
+  height: 36px;
+  margin-bottom: -11.5px;
+  min-width: 157px;
+  padding: 6px 15.8px;
+}
+
+.about-page .this-is-a-button {
+  color: var(--white);
+  font-family: var(--font-family-heititc-medium);
+  font-size: var(--font-size-l);
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 12px;
+  min-height: 14px;
+  white-space: nowrap;
+}
+
+.about-page .overlap-group1 {
+  height: 1289px;
+  margin-left: 0;
+  margin-top: 7px;
+  position: relative;
+  width: 1280px;
+}
+
+.about-page .rectangle-7 {
+  background-color: #485849;
+  height: 1287px;
+  left: 0;
+  position: absolute;
+  top: 2px;
+  width: 1280px;
+}
+
+.about-page .green-background {
+  height: 408px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 1280px;
+}
+
+.about-page .enjoy-the-life-that {
+  color: var(--white);
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-xxxxl);
+  font-weight: 900;
+  height: 129px;
+  left: 237px;
+  letter-spacing: 0;
+  line-height: 50px;
+  position: absolute;
+  text-align: center;
+  top: 163px;
+  width: 808px;
+}
+
+.about-page .span1 {
+  font-size: var(--font-size-xxxl);
+  font-weight: 300;
+}
+
+.about-page .t-life-app-is-a-tea {
+  height: 139px;
+  left: 508px;
+  letter-spacing: 0;
+  line-height: 22px;
+  position: absolute;
+  top: 464px;
+  width: 299px;
+}
+
+.about-page .teahouse {
+  height: 409px;
+  left: 394px;
+  object-fit: cover;
+  position: absolute;
+  top: 743px;
+  width: 493px;
+}
+
+.about-page .border {
+  height: 30px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 630px;
+  width: 1280px;
+}
+
+.about-page .dating-back-to-ancie {
+  height: 210px;
+  left: 59px;
+  letter-spacing: 0;
+  line-height: 22px;
+  position: absolute;
+  top: 876px;
+  width: 292px;
+}
+
+.about-page .our-storythe-foun {
+  height: 411px;
+  left: 932px;
+  letter-spacing: 0;
+  line-height: 22px;
+  position: absolute;
+  top: 739px;
+  width: 292px;
+}

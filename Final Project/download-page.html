@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>T.Life Download Page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1280, maximum-scale=1.0" />
+    <meta name="og:type" content="website" />
+    <meta name="twitter:card" content="photo" />
+    <link rel="stylesheet" type="text/css" href="css/download-page.css" />
+    <link rel="stylesheet" type="text/css" href="css/styleguide.css" />
+    <link rel="stylesheet" type="text/css" href="css/fontface.css" />
+  </head>
+  <body style="margin: 0">
+    <input type="hidden" id="anPageName" name="page" value="download-page" />
+    <div class="container-center-horizontal">
+      <form class="download-page screen" name="form4" action="form4" method="post">
+        <div class="flex-row">
+          <a href="home-page.html"><img class="tlife-logo" src="img/tlife-logo-1@1x.png" alt="tlogo"/> </a
+          ><a href="home-page.html"><div class="place roboto-black-black-12px">Home</div> </a
+          ><a href="home-page.html"><div class="about roboto-black-black-12px">About</div> </a
+          ><a href="javascript:SubmitForm('form4')">
+            <div class="log-in-button">
+              <div class="group-3">
+                <div class="overlap-group"><p class="this-is-a-button">Try Our App On Web</p></div>
+              </div>
+            </div></a
+          >
+        </div>
+        <div class="rectangle-9">
+          <iframe
+            style="border: 0; pointer-events: auto"
+            id="ytplayer"
+            type="text/html"
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/3KfvUCKxCts?rel=0&mute=1&autoplay=1"
+            frameborder="0"
+            allowfullscreen="allowfullscreen"
+            mozallowfullscreen="mozallowfullscreen"
+            msallowfullscreen="msallowfullscreen"
+            oallowfullscreen="oallowfullscreen"
+            webkitallowfullscreen="webkitallowfullscreen"
+          ></iframe>
+        </div>
+        <a
+          href="https://xd.adobe.com/view/3ef3a8ed-458e-4258-becf-712b4f2220fd-6ba0/"
+          ><div class="try-our-app-here">Try Our App Here!</div>
+        </a>
+        <div class="download" id="download1">Download</div>
+        <div class="t-life-herbal-tea-delivery">T.Life Herbal Tea Delivery 📱</div>
+      </form>
+    </div>
+    <script>
+
+
+      if (!HTMLFormElement.prototype.reportValidity) {
+        HTMLFormElement.prototype.reportValidity = function () {
+          if (this.checkValidity()) return true;
+          var btn = document.createElement("button");
+          this.appendChild(btn);
+          btn.click();
+          this.removeChild(btn);
+          return false;
+        };
+      }
+
+      function SubmitForm(form_name) {
+        var form = document.getElementsByName(form_name)[0];
+        if (form.reportValidity()) {
+          form.submit();
+          if (window.submitted) window.submitted();
+        }
+      }
+      console.log("javascript working");
+      document.getElementById("download1").addEventListener("click", download1Clicked);
+
+
+      function download1Clicked(){
+      alert("Coming Sooooooooooooooooooooooon!!!!");
+      }
+
+    </script>
+  </body>
+</html>

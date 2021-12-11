@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>T.Life Home Page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1280, maximum-scale=1.0" />
+    <meta name="og:type" content="website" />
+    <meta name="twitter:card" content="photo" />
+    <link rel="stylesheet" type="text/css" href="css/home-page.css" />
+    <link rel="stylesheet" type="text/css" href="css/styleguide.css" />
+    <link rel="stylesheet" type="text/css" href="css/fontface.css" />
+  </head>
+  <body style="margin: 0">
+    <input type="hidden" id="anPageName" name="page" value="home-page" />
+    <div class="container-center-horizontal">
+      <form class="home-page screen" name="form1" action="form1" method="post">
+        <div class="flex-row">
+          <img class="tlife-logo" src="img/tlife-logo-1@1x.png" alt="tlogo" />
+          <div class="place roboto-black-black-12px">Home</div>
+          <a href="about-page.html"><div class="about roboto-black-black-12px">About</div> </a
+          ><a href="download-page.html">
+            <div class="log-in-button">
+              <div class="group-3">
+                <div class="overlap-group"><img class="this-is-a-button" src="img/this-is-a-button@1x.png" alt="button"/></div>
+              </div></div
+          ></a>
+        </div>
+        <div class="flex-row-1">
+          <div class="flex-col">
+            <p class="what-people-sayver">
+              <span class="span0">What People Say<br /></span><span class="span1"><br /></span
+              ><span class="span2">Verified reviews from App Store and Google Play</span>
+            </p>
+            <div class="overlap-group2">
+              <div class="group-7">
+                <img class="polygon-1" src="img/polygon-1-1@1x.png" alt="stars"/>
+                <img class="polygon" src="img/polygon-1-1@1x.png" alt="stars"/>
+                <img class="polygon" src="img/polygon-1-1@1x.png" alt="stars"/>
+                <img class="polygon" src="img/polygon-1-1@1x.png" alt="stars"/>
+                <img class="polygon" src="img/polygon-1-1@1x.png" alt="stars"/>
+              </div>
+              <p class="i-love-this-tea-app">
+                <span class="span0-1" id="review1"
+                  >“I love this tea app! It does everything I want it to do and more. I’ve wanted a convenient way to
+                  keep notes on the teas I have tasted and be able to easily find them again and this is it. I really
+                  love all the features. I have taken notes on 122 teas so far and it’s great to look back to refresh my
+                  memory of different teas and to learn how I might improve my brewing techniques. This is truly the
+                  best app ever!”<br /></span
+                ><span class="span1-1"><br /></span
+                ><span class="span2-1" id="review2">CINDY, TEA ENTHUSIAST &amp; FIRST BETA USER</span>
+              </p>
+            </div>
+            <div class="ellipse-container">
+              <div class="ellipse-cindy" id="cindy"></div>
+              <div class="ellipse-k" id="k1"></div>
+              <div class="ellipse-smote" id="smote"></div>
+              <div class="ellipse-k" id="k2"></div>
+            </div>
+          </div>
+          <div class="overlap-group1">
+            <img class="tlife-home-screen" src="img/tlife-home-screen-1@1x.png" alt="tlogo" />
+            <div class="download-app-store">
+              <img class="apple" id="apple1" src="img/apple-1@1x.png" alt="apple"/>
+              <img class="android" id="android2" src="img/android-1@1x.png" alt="android"/>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script>
+
+
+      if (!HTMLFormElement.prototype.reportValidity) {
+        HTMLFormElement.prototype.reportValidity = function () {
+          if (this.checkValidity()) return true;
+          var btn = document.createElement("button");
+          this.appendChild(btn);
+          btn.click();
+          this.removeChild(btn);
+          return false;
+        };
+      }
+
+      function SubmitForm(form_name) {
+        var form = document.getElementsByName(form_name)[0];
+        if (form.reportValidity()) {
+          form.submit();
+          if (window.submitted) window.submitted();
+        }
+      }
+
+      console.log("javascript working");
+      document.getElementById("cindy").addEventListener("click", cindybutton);
+      document.getElementById("k1").addEventListener("click", k1button);
+      document.getElementById("smote").addEventListener("click", smotebutton);
+      document.getElementById("k2").addEventListener("click", k2button);
+      document.getElementById("android2").addEventListener("click", android2Clicked);
+      document.getElementById("apple1").addEventListener("click", apple1Clicked);
+
+      function android2Clicked(){
+      alert("Unable to download");
+      }
+
+      function apple1Clicked(){
+      alert("Unable to download");
+      }
+
+      function cindybutton(){
+      document.getElementById("review1").innerHTML = "I love this tea app! It does everything I want it to do and more. I’ve wanted a convenient way to keep notes on the teas I have tasted and be able to easily find them again and this is it. I really love all the features. I have taken notes on 122 teas so far and it’s great to look back to refresh my memory of different teas and to learn how I might improve my brewing techniques. This is truly the best app ever!";
+      document.getElementById("review2").innerHTML = "CINDY, TEA ENTHUSIAST &amp; FIRST BETA USER";
+      }
+
+
+      function k1button(){
+      document.getElementById("review1").innerHTML = "This app deserves more than 5 stars, truly an A+. This is for sure the most well developed app for both newcomers to tea and aficionados. It has everything you could want, and surprisingly more. I've been in the tea industry for over ten years and this app provides so many options for cataloging, palate training, inventory maintenance, and even the basic timing features are solid and charming. Again, excellent job all around. Thank you!";
+      document.getElementById("review2").innerHTML = "KENNETH, FOUNDER @ CRAFT-INCENSE.COM";
+      }
+
+
+      function smotebutton(){
+      document.getElementById("review1").innerHTML = "Incredible app that allows users to track their tea drinking habits and experiences. I really appreciate the ease of use and simplicity of the app, allowing the user to focus on the experience of drinking tea without major distractions from the phone (even though you're using it to track!). The pre- input tasting flavors are awesome since it can help jog a memory but the ability to add in your own content makes the app perfectly customizable!";
+      document.getElementById("review2").innerHTML = "SMOTE, TEA ENTHUSIAST IN RALEIGH, NC";
+      }
+
+      function k2button(){
+      document.getElementById("review1").innerHTML = "I've been using this app for a few weeks now and so far I've really enjoyed dising it! It's everything a tea lover, tea teacher, tea enthusiast could want in one app. I do a lot of tasting sessions for reviews on my blog and having one space that holds them all down to all the very fine details has been so helpful. The randomiser tool had really helped me to make the most of things in my stats that I probably would have overlooked had it not picked them and I continue to use it everyday.";
+      document.getElementById("review2").innerHTML = "KIMBERLEY, BLOGGER @ TEAISAWISHBLOG.COM";
+      }
+
+    </script>
+  </body>
+</html>

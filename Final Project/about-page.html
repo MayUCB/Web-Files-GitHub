@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>T.Life About Page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1280, maximum-scale=1.0" />
+    <meta name="og:type" content="website" />
+    <meta name="twitter:card" content="photo" />
+    <link rel="stylesheet" type="text/css" href="css/about-page.css" />
+    <link rel="stylesheet" type="text/css" href="css/styleguide.css" />
+    <link rel="stylesheet" type="text/css" href="css/fontface.css" />
+  </head>
+
+  <body style="margin: 0">
+    <input type="hidden" id="anPageName" name="page" value="about-page" />
+    <div class="container-center-horizontal">
+      <form class="about-page screen" name="form5" action="form5" method="post">
+        <div class="flex-row">
+          <a href="home-page.html"><img class="tlife-logo" src="img/tlife-logo-1@1x.png" alt="tlogo"/> </a
+          ><a href="home-page.html"><div class="place roboto-black-black-12px">Home</div> </a
+          ><a href="javascript:SubmitForm('form5')"><div class="about roboto-black-black-12px">About</div> </a
+          ><a href="javascript:SubmitForm('form5')">
+            <div class="try-app-button">
+              <div class="group-3">
+                <div class="overlap-group"><p class="this-is-a-button">Try Our App On Web</p></div>
+              </div>
+            </div></a
+          >
+        </div>
+
+        <div class="overlap-group1">
+          <div class="rectangle-7"></div>
+          <img class="green-background" src="img/greenbackground@1x.png" alt="greenbackground" />
+          <h1 class="enjoy-the-life-that">
+            <span>Enjoy the life that tea brings<br /></span
+            ><span class="span1">Organic herbal tea shop that delivered hot tea to your doorstep. <br /></span
+            ><span></span>
+          </h1>
+
+          <div class="t-life-app-is-a-tea helveticaneue-regular-normal-white-22px">
+            T.Life app is a tea delivery app for consumers to select, schedule, and sit back with same-day delivery or
+            pickup.
+          </div>
+          <img class="teahouse" src="img/teahouse@1x.png" alt="teahouse" />
+          <img class="border" src="img/border@1x.png" alt="border"/>
+
+          <div class="dating-back-to-ancie helveticaneue-regular-normal-white-22px">
+            Dating back to Ancient Egypt and Ancient China, herbal tea has been used for hundreds of years for its
+            health benefits and great taste.
+          </div>
+
+          <div class="our-storythe-foun helveticaneue-regular-normal-white-22px">
+            Our Story:<br /><br />The founders of TLife are two young women from Egypt and China, Amy Hassan and Lisa
+            Zhan. They both love the beautiful mood and culture of the tea-tasting process, then they hit it off in the
+            first meet. Five years later, they opened a take-out herbal tea shop in Boulder City that could deliver hot
+            tea to your house. People can enjoy the life that tea brings.
+          </div>
+        </div>
+      </form>
+    </div>
+    <script>
+
+
+      if (!HTMLFormElement.prototype.reportValidity) {
+        HTMLFormElement.prototype.reportValidity = function () {
+          if (this.checkValidity()) return true;
+          var btn = document.createElement("button");
+          this.appendChild(btn);
+          btn.click();
+          this.removeChild(btn);
+          return false;
+        };
+      }
+
+      function SubmitForm(form_name) {
+        var form = document.getElementsByName(form_name)[0];
+        if (form.reportValidity()) {
+          form.submit();
+          if (window.submitted) window.submitted();
+        }
+      }
+    </script>
+  </body>
+</html>
